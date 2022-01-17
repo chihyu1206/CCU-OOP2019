@@ -1,0 +1,93 @@
+i
+InputFile
+顯示False等失敗訊息(I Import accounts from a file 5%)
+
+I
+InputFile1.txt
+(I Import accounts from a file 5%)
+
+s
+Holder                             Type               Balance
+
+Aaron vi-Britannia                Savings             800.89    
+Abbott Walton                     Checking            79.00     
+Abel Mars                         Investment          975.00    
+van Houten Cargill-MacMillan      Savings             52.40 
+(Holder全對1%有錯就不給分，Type全對1%有錯就不給分，Balance全對3%錯一個扣1分最多扣3分)
+(S Show accounts 5%)
+
+I
+InputFile2.txt
+(I Import accounts from a file 10%)
+
+S
+Holder                             Type               Balance
+
+Aaron vi-Britannia                Savings             800.89    
+Abbott Walton                     Checking            79.00     
+Abel Mars                         Investment          975.00    
+van Houten Cargill-MacMillan      Savings             52.40     
+Alexander Johnson                 Checking            59.90     
+Alexander Johnson                 Savings             68.70     
+Alexander Johnson                 Checking            69.90
+(Holder全對1%有錯就不給分，Type全對1%有錯就不給分，Balance全對8%錯一個扣1分最多扣8分)     
+(S Show accounts 10%)
+
+
+m
+*** Portfolio Management menu ***
+I Import accounts from a file
+S Show accounts (brief)
+E Export a banking report (to file)
+M Show this menu
+Q Quit Program
+(M Show this menu  5%)
+
+e
+OutFile.txt
+顯示True等成功訊息(E Export a banking report 5%)
+Banking Summary
+------------------------
+Savings Accounts
+
+Holder's Name			Initial Balance			Projected Balance
+---------------------------------------------------------------------------
+vi-Britannia Aaron     		800.89    			802.49             
+Cargill-MacMillan van Houten 	52.40     			96.94     
+Johnson    Alexander 		68.70     			652.65    
+(Holder's Name全對1分有錯就不給分，Initial Balance錯一個扣1分全錯扣4分，Projected Balance錯一個扣2分全錯扣5分)
+
+Checking Accounts
+
+Holder's Name			Initial Balance			Projected Balance
+---------------------------------------------------------------------------
+Walton     Abbott    		79.00     			79.10     
+Johnson    Alexander 		59.90     			60.00     
+Johnson    Alexander 		69.90     			70.00     
+(Holder's Name全對1分有錯就不給分，Initial Balance錯一個扣1分全錯扣4分，Projected Balance錯一個扣2分全錯扣5分)
+
+Investment Accounts
+
+Holder's Name			Initial Balance			Projected Balance
+---------------------------------------------------------------------------
+Mars       Abel      		975.00    		  	60983.93
+(Holder's Name全對1分有錯就不給分，Initial Balance全錯扣4分，Projected Balance全錯扣5分)
+
+Overall Account distribution
+Savings:	3         -	517.36    
+Checking:	3         -	69.70     
+Investment:	1         -	60983.93
+(類型的數量錯一個扣1分，金額錯一個扣2分，類型和金額全錯扣10分)
+(E Export a banking report  45%)  
+
+
+Q
+顯示"Goodbye"，並exit program
+(Q Quit program  5%) 
+
+
+MakeFile(10%):
+測試 gmake 是否可以成功編譯，以及 gmake clean 是否可以成功清除。
+如果 gmake 失敗的話最多扣 7 分，沒有做 clean 扣 3 分。(don't know how to make clean)
+
+
